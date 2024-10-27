@@ -1,0 +1,197 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f0f4f8, #e7e9eb);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+}
+
+/* Auth Section Styling */
+.auth-section {
+    margin-bottom: 20px;
+}
+
+.auth-section h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    font-size: 1em;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.2);
+}
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(41, 128, 185, 0.2);
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+p {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Tab Navigation */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tab:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.tab.active {
+    background-color: #1abc9c;
+}
+
+.tab-content {
+    display: none;
+    text-align: left;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Book List Styling */
+.book-list,
+.recommendation-list,
+.explore-list {
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    animation: fadeIn 0.6s ease-in;
+}
+
+.book-list-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+input[type="text"]#search {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Messages */
+#login-message,
+#signup-message {
+    font-size: 0.9em;
+    color: #e74c3c;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
